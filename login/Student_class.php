@@ -1,7 +1,7 @@
 <?php
 include "db.php";
 
-class user extends db
+class student extends db
 {
 	private $name;
 	private $roll;

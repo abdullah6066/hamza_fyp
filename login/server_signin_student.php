@@ -8,7 +8,7 @@ include "Student_class.php";
 $roll_no = $_REQUEST['username'];
 $pwd = $_REQUEST['pwd'];
 
-$user = new user();
+$user = new student();
 $user->connectDB();
 $result = $user->login_check( $roll_no, $pwd );
 
