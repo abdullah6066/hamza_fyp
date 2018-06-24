@@ -5,15 +5,15 @@ class course extends db
 {
 	private $C_name;
 	private $C_code
-        private $CR;    
-        $user = new teacher();
+    private $CR;    
+    private $user = new teacher();
 
 	function __construct(){
 
 	}
 
 	function add_user($t1, $t2, $t3,$t4){
-		$this->T_name = $t1;
+		$this->C_name = $t1;
 		$this->C_code= $t2;
 		$this->CR = $t3;
                 
@@ -31,9 +31,9 @@ class course extends db
 		$sql_stmt = "insert into  teacher (C_name, T_ID, T_password,T_dept,TID) values ('$t1' ,'$t2', '$t3', '$t4','$Tid')";
 
 		if ( $this->con->exec( $sql_stmt ) )
-			header("location: ../index.php?msg=course Added");
+			return true;
 		else
-			header("location: ../index.php?msg=Issue. course Not added");
+			return false;
 	}
 
 	function viewall(){

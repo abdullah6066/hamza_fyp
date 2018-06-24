@@ -38,14 +38,14 @@
 </div>
 <div style="margin-top: 150px">
 	<div id="float" style="margin-left: 500px">
-		<a id="text_dec" href="sign_in.php">
+		<a id="text_dec" href="login\Sign_in_student.php">
 		<img src="student.png">
 		<br>
 		<span style="margin-left: 100px">Student</span>
 		</a>
 	</div>
 	<div >
-		<a id="text_dec" href="sign_in.php">
+		<a id="text_dec" href="login\Sign_in_teacher.php">
 		<img style="margin-left: 300px" src="teacher.png">
 		<br>
 		<span style="margin-left: 400px">Teacher</span>
