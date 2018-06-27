@@ -1,5 +1,12 @@
 <?php 
 
+session_start();
+if( isset( $_SESSION['user']) )
+  {  $buttonname= $_SESSION['user'] ;
+    $id= $_SESSION['id'] ;
+    }
+else
+    header("location: ../index.php?msg=login first");
 
 
 

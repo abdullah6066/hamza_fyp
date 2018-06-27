@@ -16,7 +16,8 @@ if( $result->rowCount()>0){
 
 	$row = $result->fetchObject();
 
-	$_SESSION['user'] = $row->T_name;
+	$_SESSION['user'] = $row->T_name; 
+	$_SESSION['id'] = $row->TID;
 	header("location: ../home\home.php");	
 }
 else

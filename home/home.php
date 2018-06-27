@@ -1,5 +1,18 @@
 <?php
 
+session_start();
+if( isset( $_SESSION['user']) )
+   { $buttonname= $_SESSION['user'] ;
+    $id= $_SESSION['id'];
+    }
+else
+    header("location: ../index.php?msg=login first");
+
+
+// $msg = "";
+// if( !empty($_GET['msg']) )
+//     $msg = $_GET['msg'];
+
 
 
 
@@ -159,7 +172,10 @@
 		<div id="signindix">
 			<div id="navcontainer">
 				  <ul><li style="margin-top: 10px"><a href="about_us.html" id="text_dec" style="margin-right: 20px;margin-left: 1400px;" > <span>About Us</span></a></li></ul>
-				<a href="Admin\Admin_menu.php"><input style="padding: 6px" id="signin" type="button" name="" value="Admin"></a>
+				<a href="Admin\Admin_menu.php"><input style="padding: 6px" id="signin" type="button" name="" value="
+                    <?php
+                     echo $buttonname;
+                    ?>"></a>
 			</div>
 			
 		</div>
