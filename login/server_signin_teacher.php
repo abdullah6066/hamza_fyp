@@ -17,7 +17,7 @@ if( $result->rowCount()>0){
 	$row = $result->fetchObject();
 
 	$_SESSION['user'] = $row->T_name;
-	header("../location: home.php");	
+	header("location: ../home\home.php");	
 }
 else
 		header("location: ../index.php?msg=Login first");

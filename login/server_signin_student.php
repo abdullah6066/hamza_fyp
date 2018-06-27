@@ -12,15 +12,15 @@ $user = new student();
 $user->connectDB();
 $result = $user->login_check( $roll_no, $pwd );
 
-if( $result->rowCount()>0){
+if( $result->rowCount() >0){
 
 	$row = $result->fetchObject();
 
 	$_SESSION['user'] = $row->S_name;
-	header("../location: index.php");	
+	header("location: ../home\home.php");	
 }
 else
-		header("location: home.php?msg=Login first");
+		header("location: Sign_in_student.php?msg=Login first");
 
 
 ?>

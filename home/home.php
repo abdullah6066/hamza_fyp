@@ -4,9 +4,10 @@
 
 
 
-?>
+  ?>
 <!DOCTYPE html>
 <html>
+<head>
 <script type="text/javascript">
 	
 </script>
@@ -143,14 +144,14 @@
     }
 </style>
 <head>
-	<title>Index</title>
+	<title>Home</title>
 </head>
 <body style="margin: .0em;font-family: calibri" >
 <!--header-->
 	<div style="font-family: calibri" >
 	<div id="div1_head">
 		<div id="floatL" style="padding: 10px">
-						<a href="index.html"> <img style="border-radius: 50px" height="40px" src="logo1.png"> </a>
+						<a href="index.html"> <img style="border-radius: 50px" height="40px" src="../logo1.png"> </a>
 		</div>
 		<div id="floatL" style="font-size: 30px;color: white;margin-top: 10px">
 			Exam Generator
@@ -165,26 +166,61 @@
 	</div>
 </div>
 <!---header--->
-<div style="margin-top: 150px">
-	<div id="float" style="margin-left: 500px">
-		<a id="text_dec" href="login\Sign_in_student.php">
-		<img src="student.png">
-		<br>
-		<span style="margin-left: 120px;color: black">Student</span>
-		</a>
-	</div>
-	<div >
-		<a id="text_dec" href="login\Sign_in_teacher.php">
-		<img style="margin-left: 300px" src="teacher.png">
-		<br>
-		<span style="margin-left: 420px;color: black">Teacher</span>
-	    </a>
-	</div>
+<div>
+  <div id="floatL" style="margin-top: 50px;margin-left: 100px">
+   <img src="../e1.jpg"> 
+  </div>    
+  <div id="floatR" style="">
+    <div style="margin-top: 50px;margin-right: 100px;border-style: solid;border-radius: 5px;">
+        <span style="font-size: 35px">My Courses</span>
+        <div style="margin: 20px" >
+            <table>
+                <tr>
+                    <td>
+                        <span id="format"> 
+                                    <?php
+                                    include "course_class.php";
+
+                                    $user = new course();
+                                    $user-> connectDB();
+                                    $t1=1;
+                                    $result = $user->search_by_TID( $t1 );
+
+                                    $output1 = "";
+                                    $output1 = " <div>";
+
+                                    foreach ($result as $row) 
+                                    {
+                                        $output1 .= "
+                                        <tr> 
+                                        <td>$row[1]</td>
+                                        </tr>";
+                                    }
+                                    $output1 .= " </div>";
+
+
+                                    echo $output1;
+
+                                    ?>
+
+                                </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </div>
+  <div>
+  </div>
+</div>
+
+<div style="margin-top: 400px;margin-left: 100px">
+    <a href="../Add_course\Add_course.php"> <input type="button" name=""  value="Add course"></a>
 </div>
 
 <!---footer--->
 <div id="div1_head" style="margin-top: 440px">
-	<img height="30px" style="border-radius: 25px; margin-left: 1800px;margin-top: 3px" src="logo1.png">
+	<img height="30px" style="border-radius: 25px; margin-left: 1800px;margin-top: 3px" src="../logo1.png">
 </div>
 <!---footer--->
 

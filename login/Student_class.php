@@ -63,7 +63,7 @@ class student extends db
 	}
 
 	function login_check($t1, $t2){
-		$sql_stmt = "select * from admin where Roll_no='$t1' and S_password='$t2' ";	
+		$sql_stmt = "select * from student where Roll_no='$t1' and S_password='$t2' ";	
 		$ret_obj = $this->con->query($sql_stmt);
 		return $ret_obj;		
 	}

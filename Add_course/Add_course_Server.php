@@ -12,15 +12,15 @@ $tname = $_REQUEST['tname'];
 
 $user = new course();
 $user->connectDB();
-$result = $user->add_user($Cname,$Ccode,$ch,$tname)
+$result = $user->add_user($Cname,$Ccode,$ch,$tname);
 
-if(!$result)
+if($result == true)
 {
 
-	header("location: ../home.php?msg=not added");	
+	header("location: ../home.php?msg= added");	
 }
 else
-		header("location: ../home.php?msg=added");
+		header("location: ../home.php?msg= not added");
 
 
 ?>
