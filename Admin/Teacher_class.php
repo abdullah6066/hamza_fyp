@@ -6,19 +6,24 @@ class teacher extends db
 	private $T_name;
 	private $T_ID;
 	private $pwd;
-        private $T_dept;
+    private $T_dept;
+    private $gender;
+    private $day;
+    private $month;
+    private $year;
+    private $mail;
 
 	function __construct(){
 
 	}
 
-	function add_user($t1, $t2, $t3, $t4){
+	function add_user($t1, $t2, $t3, $t4,$t5, $t6, $t7, $t8,$t9){
 		$this->T_name = $t1;
 		$this->T_ID = $t2;
 		$this->pwd = $t3;
-                $this->T_dept = $t4;
+        $this->T_dept = $t4;
   
-		$sql_stmt = "insert into  teacher (T_name, T_ID, T_password,T_dept) values ('$t1' ,'$t2', '$t3', '$t4')";
+		$sql_stmt = "insert into  teacher (T_name, T_ID, T_password,T_dept,gender,day,month,year,mail) values ('$t1' ,'$t2', '$t3', '$t4','$t5' ,'$t6', '$t7', '$t8', '$t9')";
 
 		if ( $this->con->exec( $sql_stmt ) )
 			header("location: Admin_menu.php?msg=Data Added");

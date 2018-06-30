@@ -199,8 +199,7 @@ else
 
                                     $user = new course();
                                     $user-> connectDB();
-                                    $t1=1;
-                                    $result = $user->search_by_TID( $t1 );
+                                    $result = $user->search_by_TID( $id );
 
                                     $output1 = "";
                                     $output1 = " <div>";

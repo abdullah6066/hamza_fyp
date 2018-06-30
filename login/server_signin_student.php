@@ -20,7 +20,7 @@ if( $result->rowCount() >0){
 	header("location: ../home\home.php");	
 }
 else
-		header("location: Sign_in_student.php?msg=Login first");
+		header("location: Sign_in_student.php?msg=Wrong username  or password");
 
 
 ?>
