@@ -3,6 +3,7 @@
 session_start();
 
 
+
 include "Student_class.php";
 
 $roll_no = $_REQUEST['username'];
@@ -17,6 +18,7 @@ if( $result->rowCount() >0){
 	$row = $result->fetchObject();
 
 	$_SESSION['user'] = $row->S_name;
+	$_SESSION['id'] = $row->SID;
 	header("location: ../home\home.php");	
 }
 else

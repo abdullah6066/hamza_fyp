@@ -51,25 +51,6 @@
 				<div style="padding: 40px ">
 					
 					
-					<div style="margin-top: 50px">
-						<div id="float" style="margin-left: 10px;float: left;">
-							<a id="text_dec" href="login\Sign_in_student.php">
-								<img src="student.png">
-								<br>
-								<span style="margin-left: 100px;color: black">Student</span>
-							</a>
-						</div>
-						<div >
-							<a id="text_dec" href="login\Sign_in_teacher.php">
-								<img style="margin-left: 300px" src="teacher.png">
-								<br>
-								<span style="margin-left: 400px;color: black">Teacher</span>
-							</a>
-						</div>
-						<br>
-						<br>
-						<br>
-					</div>
 
 
 

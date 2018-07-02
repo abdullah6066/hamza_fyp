@@ -9,13 +9,13 @@
 <head>
 	<title>ADMIN</title>
 </head>
-<body style="background-color: rgb(200,202,202);margin: .0em;">
+<body>
 
 
 <section >
-	<div style="background-color: black">
+	<div style="background-color: black;height: 350px">
 		<div style="float: left;">
-			<img style="margin-left: 250px;margin-top: 15px;height: 125px" src="logo.png">
+			<img style="margin-left: 250px;margin-top: 15px;height: 125px" src="Uelahore_logo.png">
 		</div>
 		<div style="margin: 0em" >
 			<div align="right" style="margin-right: 250px">
@@ -25,25 +25,26 @@
 			    <img src="Youtube_32x32.png"/><br/><br/><br/>
 				<span style="color: rgb(204,204,204); font-size: 20px;">info@tlt.communication.co.uk</span><br/>
 				<br/>
-				<br/><br>
+				<br/><br/>
 			</div>
 		</div>
 	</div>
 	<div style="margin-right: 250px;margin-left: 250px;background-color: rgb(247,247,248);margin-top: -30px">
-			<a href="../index.php">	<div style="float: left;background-color: red;color: white;padding: 25px;margin-top: -12px ;margin-left: 50px;margin-right: 60px;">Home</div></a>
+				<div style="float: left;background-color: red;color: white;padding: 25px;margin-top: -12px ;margin-left: 50px;margin-right: 60px;">Home</div>
 				<div style="padding: 20px;margin-top: -20px"> About us</div>
 			</div>
 </section>
-	<div style="background-color: rgb(200,202,202);margin-top: 0px">
+
+	<div style="background-color: rgb(200,202,202);">
 		
 			
 			<div style="background-color: white;margin-left: 250px;margin-right: 250px">
 				<div style="float: left; margin-left: 40px">
 					<br/>
-					<span style="color: red;font-size: 24px">Add Teacher Form</span>
+					<span style="color: red;font-size: 24px">Keep in touch</span>
 					<br/>
 					<br/>
-					<span style="font-size: 20px">Student Portal</span>
+					<span style="font-size: 20px">London Business Sale office</span>
 					<br/>
 					<br/>
 					<span style="color: rgb(142,142,142);"> Devenport house,
@@ -68,25 +69,28 @@
 					<div style="padding: 40px ;border-style: solid;border-radius: 1px;border-color: rgb(130,130,130);">
 					<div style="float: left;margin-left: 50px;margin-top: -15px" align="right">
 						<br>
-						<div>Candidate's Name &nbsp:</div>
+						<div>Student Name &nbsp:</div>
 						<div style="margin-top: -5px"><span style="font-size: 8px;margin-right: 20px">(As per SSC Records)</span></div>
-						<div style="margin-top: 10px">TeacherID &nbsp:</div>
+						<div style="margin-top: 10px">Student ID &nbsp:</div>
+					<div style="margin-top: -5px"><span style="font-size: 8px;margin-right: 20px">(As per SSC Records)</span></div>
+						<div style="margin-top: 10px">Student Password &nbsp:</div>
 						<div style="margin-top: -5px"><span style="font-size: 8px;margin-right: 20px">(As per SSC Records)</span></div>
-						<div style="margin-top: 10px">Teacher Password &nbsp:</div>
-						<div style="margin-top: -5px"><span style="font-size: 8px;margin-right: 20px">(As per SSC Records)</span></div>
-						<div style="margin-top: 15px">Teacher Department &nbsp:</div>
-						<div style="margin-top: 20px">Date of birth &nbsp:</div>
+						<div style="margin-top: 15px">Date of birth &nbsp:</div>
 						<div style="margin-top: 20px">Gender &nbsp:</div>
 						<div style="margin-top: 20px">Email &nbsp:</div>
+						<div style="margin-top: 10px" >Program &nbsp:</div>
+						<div style="margin-top: -5px"><span style="font-size: 8px;margin-right: 20px">(As per SSC Records)</span></div>
+						<div style="margin-top: 10px" >Semester &nbsp:</div>
+						<div style="margin-top: 10px" >Section &nbsp:</div>
+						
 					</div>
 					<div style="font-size: 18px">
 
 						<form action="Add_teacher_server.php" method="post">
-						    <input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="name" id="" /><br/>
-							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="id" id="" /><br/>
-						    <input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="Password" name="pwd" id="" /><br/>
-						    <input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="dpt" id="" /><br/>
-							&nbsp;&nbsp;Day<select style="font-size: 15px;margin-left: 10px;margin-top: 18px" name="day">
+						    <input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="name" id="name" /><br/>
+							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="id" id="id" /><br/>
+						    <input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="pwd" id="pwd" /><br/>
+							&nbsp;&nbsp;Day<select style="font-size: 15px;margin-left: 10px;margin-top: 18px" name="day" id="day">
 								<option>DD</option>
 								<option>1</option>
 								<option>2</option>
@@ -119,7 +123,7 @@
 								<option>29</option>
 								<option>30</option>
 							</select>
-							Month<select style="font-size: 15px;margin-left: 10px" name="month">
+							Month<select style="font-size: 15px;margin-left: 10px" name="month" id="month">
 								<option>MM</option>
 								<option>Jan</option>
 								<option>Feb</option>
@@ -134,7 +138,7 @@
 								<option>Nov</option>
 								<option>Dec</option>
 							</select>
-							year<select style="font-size: 15px;margin-left: 10px" name="year">
+							year<select style="font-size: 15px;margin-left: 10px" name="year" id="year">
 								<option>YYYY</option>
 								<option>2000</option>
 								<option>2001</option>
@@ -152,9 +156,12 @@
 							</span>
 							<br/>
 							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="gender" id="gender" /><br/>
-							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="Email" id="Email" /><br/>
+							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="email" id="Email" /><br/>
+							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="program" id="program" /><br/>
+							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="semester" id="Semester" /><br/>
+							<input style=" font-size: 20px;margin-left: 10px;margin-top: 10px;" type="text" name="section" id="Section" /><br/>
 							<br/>
-							<input style="margin-left: 600px" type="submit" value="Submit form" name="" onclick="">
+							<input style="margin-left: 600px" type="submit" value="Submit form" name="" onclick="formsubmit()">
 							<input type="reset" value="Reset Form" name="">
 						</form>
 
@@ -165,10 +172,7 @@
 				</div>
 
 			</div>
-				  <br><br>
-				  <br><br>
-				  <br><br>
-				  <br><br>      
+				        
 		    </div>
 	
 
