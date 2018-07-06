@@ -22,10 +22,10 @@ $result = $user->add_user($Cname,$Ccode,$ch,$tname);
 if($result == true)
 {
 
-	header("location: ../home\home.php?msg= added");	
+	header("location: ../home\home_teacher.php?msg= added");	
 }
 else
-		header("location: ../home\home.php?msg= not added");
+		header("location: ../home\home_teacher.php?msg= not added");
 
 
 ?>

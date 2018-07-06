@@ -151,7 +151,7 @@
                        <ul>
               
 				        <li  style="margin-top: 10px;"><a href="Add_teacher.php">ADD teacher<br></a></li>
-				      	<li style="margin-top: 10px;"><a href="#">Delete teacher<br></a></li>
+				      	<li style="margin-top: 10px;"><a href="Client_search_by_id_teacher.php">Delete teacher<br></a></li>
 				        <li style="margin-top: 10px;"><a href="#">Update Teacher<br></a></li>
 				      <li style="margin-top: 10px;"><a href="#">View All teachers<br></a></li>
 				       
@@ -164,7 +164,7 @@
 			          <li><a id="text_dec" href=""><span >Student</span></a>
                        <ul>
 				        <li><a href="Add_student.php">ADD Student<br></a></li>
-				        <li style="margin-top: 10px;"><a href="#">Delete Student<br></a></li>
+				        <li style="margin-top: 10px;"><a href="Client_search_by_id_student.php">Delete Student<br></a></li>
 				        <li style="margin-top: 10px;"><a href="#">Update Student<br></a></li>
 				       <li style="margin-top: 10px;"><a href="#">View All Student<br></a></li>
 			          </ul> 

@@ -7,11 +7,14 @@ class course extends db
 	private $C_name;
 	private $C_code;
     private $CR; 
-    private $tid;   
+    private $tid;  
+    private $day;
+    private $month; 
     
 
 	function __construct(){
-
+    $day=date("d");
+    $month=date("m");
 	}
 
 	function add_user($t1, $t2, $t3,$t4){
@@ -19,9 +22,13 @@ class course extends db
 		$this->C_code= $t2;
 		$this->CR = $t3;
 		$this->tid=$t4;
+		$this->day=date("d");
+		$this->month=date("F");
+		$day=date("d");
+        $month=date("F");
 
 	       	
-		$sql_stmt = "insert into  course (C_name, C_code, CR,TID) values ('$t1' ,'$t2', '$t3','$t4')";
+		$sql_stmt = "insert into  course (C_name, C_code, CR,TID,day,month) values ('$t1' ,'$t2', '$t3','$t4','$day','$month')";
 
 		if ( $this->con->exec( $sql_stmt))
 			return true;

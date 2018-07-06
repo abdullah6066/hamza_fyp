@@ -18,7 +18,7 @@ if( $result->rowCount()>0){
 
 	$_SESSION['user'] = $row->T_name; 
 	$_SESSION['id'] = $row->TID;
-	header("location: ../home\home.php");	
+	header("location: ../home\home_teacher.php");	
 }
 else
 		header("location: ../index.php?msg=Login first");
